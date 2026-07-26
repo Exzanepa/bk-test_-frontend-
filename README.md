@@ -28,3 +28,25 @@ DELETE /collections/:id
 GET /bookmarks?search=&collectionId=
 POST /bookmarks
 DELETE /bookmarks/:id
+
+
+
+## API Testing (Postman)
+
+ไฟล์ Postman Collection อยู่ที่ frontend/root :
+`BBL Bookmark API.postman_collection.json`
+
+### sol. test access token
+1. Postman -> Import -> choose `BBL Bookmark API.postman_collection.json`
+2. Set Authorization:
+   - Collection -> Authorization -> Bearer Token
+   - ใส่  access_token from localStorage `http://localhost:5173`
+3. run Backend `npm run dev`  port 3000  Send 
+
+### Endpoints 
+- `GET /collections` - Get All Collections
+- `POST /collections` - Create Collection
+- `DELETE /collections/:id` - Delete Collection by ID
+- `GET /bookmarks?collectionId=&search=` - Get Bookmarks (Search & Filter)
+- `POST /bookmarks` - Create Bookmark
+- `DELETE /bookmarks/:id` - Delete Bookmark by ID
