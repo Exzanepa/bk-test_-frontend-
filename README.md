@@ -33,7 +33,7 @@ DELETE /bookmarks/:id
 
 ## API Testing (Postman)
 
-ไฟล์ Postman Collection อยู่ที่ frontend/root :
+ Postman Collection in frontend/root :
 `BBL Bookmark API.postman_collection.json`
 
 ### sol. test access token
